@@ -13,13 +13,8 @@ Full Cycle Rocks!!
 1. Criar um programa simples em **Go** que imprime `Full Cycle Rocks!!`.
 2. Construir uma **imagem Docker** contendo apenas o necessário para executar o binário.
 3. A imagem precisa ter **menos de 2MB**.
-4. Ao executar o comando:
+4. Ao executar o comando `docker run <nome-imagem>` saída deve ser exatamente:
 
-```bash
-docker run jotacosta/fullcycle
-```
-
-A saída deve ser exatamente:
 
 ```
 Full Cycle Rocks!!
@@ -88,13 +83,13 @@ ENTRYPOINT [ "/fullcycle" ]
 ### 1. Build da imagem:
 
 ```bash
-docker build -t jotacosta/fullcycle .
+docker build -t <nome-imagem> .
 ```
 
 ### 2. Executar o container:
 
 ```bash
-docker run --rm jotacosta/fullcycle
+docker run --rm <nome-imagem>
 ```
 
 ### ✅ Saída esperada:
@@ -107,7 +102,7 @@ Full Cycle Rocks!!
 
 ## 📦 Tamanho da Imagem
 
-A imagem gerada possui aproximadamente **1.7MB**, atendendo ao requisito do desafio de manter a imagem abaixo de 2MB.
+A imagem gerada possui aproximadamente **1.4MB**, atendendo ao requisito do desafio de manter a imagem abaixo de 2MB.
 
 ---
 
@@ -115,7 +110,7 @@ A imagem gerada possui aproximadamente **1.7MB**, atendendo ao requisito do desa
 
 A imagem está disponível no Docker Hub:
 
-🔗 [https://hub.docker.com/r/jotacosta/fullcycle](https://hub.docker.com/r/jotacosta/fullcycle)
+🔗 [https://hub.docker.com/r/josimarcosta/cfc-desafio-go](https://hub.docker.com/r/josimarcosta/cfc-desafio-go)
 
 ---
 
